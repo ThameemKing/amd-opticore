@@ -5,22 +5,22 @@ AI Compiler Co-Pilot for Sustainable AI on AMD Hardware
 
 ## 🚀 Project Overview
 
-**AMD OptiCore** is a prototype tool that analyzes AI models and generates architecture-aware optimization suggestions designed to improve energy efficiency and performance on AMD hardware platforms.
+**AMD OptiCore** is a prototype AI optimization assistant that analyzes PyTorch models and generates architecture-aware recommendations to improve performance-per-watt and promote Sustainable AI practices on AMD hardware.
 
-The tool profiles PyTorch models, measures performance, computes a sustainability score, evaluates optimization impact, and provides actionable recommendations for developers.
+The tool profiles model structure, benchmarks runtime performance, computes an efficiency score, evaluates optimization impact, and produces actionable tuning suggestions tailored for AMD architectures.
 
 ---
 
 ## 🧠 Problem Statement
 
-Modern AI models are often developed without hardware-aware optimization, leading to:
+Modern AI models are typically developed without hardware-aware optimization. This leads to:
 
 - Increased energy consumption  
-- Suboptimal performance  
-- Inefficient use of available compute  
-- Higher operational costs
+- Suboptimal inference performance  
+- Inefficient CPU/GPU utilization  
+- Higher operational and infrastructure costs  
 
-There is a need for a lightweight tool to assist developers in making AI workloads more efficient, especially for AMD CPUs and GPUs.
+There is currently no lightweight developer tool that assists in making AI workloads more efficient and AMD-ready through automated optimization insights.
 
 ---
 
@@ -28,63 +28,82 @@ There is a need for a lightweight tool to assist developers in making AI workloa
 
 **AMD OptiCore** performs the following:
 
-1. Loads and analyzes model architecture (CNN / Transformer)
-2. Measures inference latency and CPU utilization
-3. Computes an efficiency score and sustainability grade
-4. Applies dynamic quantization
-5. Benchmarks results
-6. Generates AMD-specific optimization suggestions
-7. Outputs a structured optimization report
+1. Loads and analyzes model architectures (CNN / Transformer)
+2. Measures inference latency
+3. Monitors CPU utilization
+4. Computes an efficiency score
+5. Assigns a sustainability grade (A / B / C)
+6. Applies dynamic quantization
+7. Benchmarks optimization impact
+8. Generates AMD-specific optimization recommendations
+9. Exports a structured optimization report
 
 ---
 
-## 📊 Features
+## 📊 Key Features
 
-- Support for multiple model types (CNN, Mini Transformer)  
-- Inference benchmarking  
-- Efficiency scoring and grading  
-- Dynamic quantization testing  
-- Intelligent AMD-aware recommendations  
-- Automatic report generation  
-- CLI-based interface
+- Multi-model support (CNN + Mini Transformer)
+- Inference benchmarking
+- Efficiency scoring system
+- Sustainability grading
+- Dynamic quantization testing
+- Intelligent AMD-aware tuning suggestions
+- CLI-based execution
+- Automatic report generation
 
 ---
 
 ## 🌱 Sustainable AI Impact
 
-By profiling model performance and optimization effectiveness, **AMD OptiCore**:
+By profiling model runtime behavior and identifying inefficient configurations, AMD OptiCore:
 
 - Encourages energy-efficient AI deployment  
 - Improves performance-per-watt  
 - Reduces compute waste  
-- Promotes optimized execution on AMD architecture
+- Promotes optimized execution on AMD architectures  
 
-Ideal for developers building AI systems with sustainability in mind.
+The system supports Sustainable AI practices by guiding developers toward more efficient model configurations.
 
 ---
+
 ## 🔧 How to Run
 
-### Install dependencies
+### 1️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
-### Run CNN model
+```
+
+### 2️⃣ Run CNN Analysis
+
+```bash
 python main.py --model cnn
-### Run Mini Transformer model
+```
+
+### 3️⃣ Run Transformer Analysis
+
+```bash
 python main.py --model transformer
+```
+
+After execution, an `optimization_report.txt` file will be generated containing performance metrics and AMD-specific recommendations.
+
 ---
 
 ## 📌 Future Enhancements
 
 - ROCm GPU profiling integration  
-- LLM optimization and mixed-precision tuning  
-- Automated accuracy-aware pruning  
-- UI dashboard for visualization  
-- Integration as VS Code / IDE plugin
+- Large Language Model (LLM) optimization support  
+- Automatic mixed-precision tuning  
+- Reinforcement learning-based runtime optimization  
+- Web dashboard for visualization  
+- IDE / VS Code extension integration  
 
 ---
 
 ## 📍 Track
 
-**Sustainable AI / Efficient Computing**
+Sustainable AI / Efficient Computing
 
 ---
 
@@ -93,14 +112,14 @@ python main.py --model transformer
 - Python  
 - PyTorch  
 - psutil  
-- torchinfo
+- torchinfo  
 
 ---
 
 ## 🎯 Vision
 
-To build an intelligent optimization layer that enables developers to deploy energy-efficient, AMD-optimized AI workloads with minimal manual effort.
+To build an intelligent AI optimization layer that enables developers to deploy energy-efficient, AMD-optimized AI workloads with minimal manual intervention — advancing the future of Sustainable AI infrastructure.
 
-## 🔧 How to Run
+---
 
-### Install dependencies
+Built for AMD Sustainable AI Innovation.
