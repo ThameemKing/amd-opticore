@@ -1,0 +1,10 @@
+Model: transformer
+Latency: 0.1319
+CPU Usage: 56.85
+Efficiency Grade: A (Highly Efficient)
+Performance Change: -79.18%
+
+Suggestions:
+- Dynamic quantization not effective → Consider FP16 mixed precision for AMD GPUs.
+- Enable ROCm stack for AMD GPU acceleration.
+- Tune batch size for Infinity Fabric bandwidth efficiency.
